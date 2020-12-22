@@ -264,11 +264,6 @@ interface PDFDocumentProxy {
     fingerprint: string;
 
     /**
-     * True if embedded document fonts are in use.  Will be set during rendering of the pages.
-     **/
-    embeddedFontsUsed(): boolean;
-
-    /**
      * @param number The page number to get.  The first page is 1.
      * @return A promise that is resolved with a PDFPageProxy.
      **/
